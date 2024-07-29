@@ -9,8 +9,9 @@ html,body{
 }
 .container{
     max-width: 450px;
-    margin: 0 auto;
-    background-color: red;
+    margin: 50px auto;
+    /* background-color: red; */
+    border: 1px solid;
     padding: 30px 20px;
     text-align: center;
 }
