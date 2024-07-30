@@ -10,7 +10,7 @@ html,body{
 .container{
     max-width: 450px;
     margin: 50px auto;
-    /* background-color: red; */
+    background-color: red;
     border: 1px solid;
     padding: 30px 20px;
     text-align: center;
