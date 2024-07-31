@@ -124,10 +124,24 @@ h1, h3{
     border-bottom: 1px solid #ccc;
 }
 .panel ul li{
-    margin: 2.5em 0;
+    margin: 2em 0;
     color: #ccc;
 } 
-
+.panel ul h3{
+    margin: 3em 0;
+}
+.cities{
+    display: block;
+    cursor: pointer;
+}
+.cities li{
+    list-style: none;
+}
+.details li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 
