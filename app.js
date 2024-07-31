@@ -20,20 +20,27 @@ let humidity = document.getElementById("humids");
 let wind = document.getElementById("winds");
 
 
-function data() {
-    let url = ("https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=9a01012f8fa0847a6c1da9bd58353c95")
-    fetch(url)
+function checkdata() {
+    if(input.value.trim() === ""){
+        alert("Please enter a city name");
+    }else{
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=9a01012f8fa0847a6c1da9bd58353c95`)
     .then((res) =>{
         return res.json();
     })
     .then((data) =>{
-        console.log(data);
+        getdata(data);
     })
     .catch((err) =>{
         console.log(err)
     })
-
+   
+    } 
     
 }
 
-btn.addEventListener("click", data);
+
+function getdata(data){
+    console.log(data)
+}
+btn.addEventListener("click", checkdata);
