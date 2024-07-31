@@ -123,6 +123,10 @@ h1, h3{
     margin: 2em 0;
     border-bottom: 1px solid #ccc;
 }
+.panel ul li{
+    margin: 2.5em 0;
+    color: #ccc;
+} 
 
 
 
