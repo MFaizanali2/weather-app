@@ -46,7 +46,7 @@ h1, h3{
     flex-direction: column;
     padding: 2em 3em 4em 3em;
 }
-.container > div{
+.container > div {
     display: flex;
     justify-content: center;
     align-items: center;
