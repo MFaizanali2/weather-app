@@ -39,7 +39,7 @@ function checkdata() {
     
 }
 
-
+let weather = document.querySelector(".weather")
 function getdata(data){
     
     // let dt13 = new Date(data.sys.sunset * 1000);
@@ -64,6 +64,62 @@ function getdata(data){
     // icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     // temperature.innerHTML = `${Math.floor(data.main.temp - 273.15)}°C`;
     // cityname.innerHTML = `${data.name}`;
+
+
+
+    weather.innerHTML = `
+    <div class="container">
+            <h3 class="brand">The Weather</h3>
+
+            <h1 class="temp" id="temp">16 <sup>o</sup></h1>
+        <div class="city">
+            <h1 class="name" id="name">Karachi</h1>
+            <h4 class="country" id="country">Pk</h4>
+            <small>
+                <span class="time" id="time">06:09</span>
+                <span class="date" id="date">Sunday july 28</span>
+            </small>
+        </div>
+        <div class="app">
+            <img src="./assests/images/clouds.png" class="icon" id="icon" width="50" height="50" alt="icon">
+            <span class="condition" id="condition">Cloudy</span>
+        </div>
+        </div>
+        
+    
+    <div class="panel">
+        <form class="locationinput">
+            <input type="text" placeholder="Search location" class="search" id="search">
+            <button type="submit" class="submit" id="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <ul class="cities">
+            <li>Karachi</li>
+            <li>New York</li>
+            <li>Paris</li>
+            <li>Berlin</li>
+        </ul>
+
+        <ul class="details">
+            <h3>Weather Details</h3>
+            <li>
+                <span>Cloudy</span>
+                <span class="clouds" id="clouds">89%</span>
+            </li>
+
+            <li>
+                <span>Humidity</span>
+                <span class="humids" id="humids">64%</span>
+            </li>
+
+            <li>
+                <span>Windy</span>
+                <span class="winds" id="winds">8km/h</span>
+            </li>
+
+            
+        </ul>
+        </div>`
     
     console.log(data)
 }
