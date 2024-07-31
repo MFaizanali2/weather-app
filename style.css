@@ -89,8 +89,40 @@ h1, h3{
     position: absolute;
     top: 0;
     right: 0;
+    padding: 1.5em;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: #fa6d1b;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 1.2em;
 }
-
+.submit:hover{
+    background: #fff !important;
+    color: #000;
+}
+.search{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0 1em 1.5em 0;
+    width: 80%;
+    font-size: 1.1;
+    color: #fff;
+}
+.search:focus{
+    outline: none;
+}
+.search::placeholder{
+    color: #ccc;
+}
+.panel ul{
+    padding: 0 0 1em 0;
+    margin: 2em 0;
+    border-bottom: 1px solid #ccc;
+}
 
 
 
