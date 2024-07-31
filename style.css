@@ -51,6 +51,16 @@ h1, h3{
     justify-content: center;
     align-items: center;
 }
+.brand{
+    font-size: 4em;
+}
+.condition{
+    font-size: 2em;
+}
+.country{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
 .temp, .city, .app{
     margin: 0 1em;
 }
@@ -58,6 +68,10 @@ h1, h3{
     margin: 0;
     margin-bottom: 0.2em;
     font-size: 3em;
+}
+.city {
+    display: flex;
+    flex-direction: column;
 }
 .temp{
     font-size: 5em;
@@ -142,7 +156,7 @@ h1, h3{
     align-items: center;
     justify-content: space-between;
 }
-
+        /* Responsive start */
 
 
 
