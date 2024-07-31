@@ -39,7 +39,6 @@ function checkdata() {
     
 }
 
-let weather = document.querySelector(".weather")
 function getdata(data){
     
     // let dt13 = new Date(data.sys.sunset * 1000);
