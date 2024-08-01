@@ -53,16 +53,16 @@ function getdata(data){
 
 
 
-    // wind.innerHTML = `${data.wind.speed} m/s`;
-    // humidity.innerHTML = `${data.main.humidity}%`;
-    // cloud.innerHTML = `${data.clouds.all}%`;
-    // countryname.innerHTML = `${data.sys.country}`;
-    // let dt1 = new Date(data.dt * 1000);
-    // condition.innerHTML = `${data.weather[0].description}`;
-    // let dt = new Date(data.dt * 1000);
-    // icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    // temperature.innerHTML = `${Math.floor(data.main.temp - 273.15)}°C`;
-    // cityname.innerHTML = `${data.name}`;
+    wind.innerHTML = `${data.wind.speed} m/s`;
+    humidity.innerHTML = `${data.main.humidity}%`;
+    cloud.innerHTML = `${data.clouds.all}%`;
+    countryname.innerHTML = `${data.sys.country}`;
+    let dt1 = new Date(data.dt * 1000);
+    condition.innerHTML = `${data.weather[0].description}`;
+    let dt = new Date(data.dt * 1000);
+    icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    temperature.innerHTML = `${Math.floor(data.main.temp - 273.15)}°C`;
+    cityname.innerHTML = `${data.name}`;
 
     
     console.log(data)
