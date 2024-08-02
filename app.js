@@ -43,6 +43,14 @@ function checkdata() {
 }
 
 function getdata(data){
+
+    const { temp, feels_like } = data.main;
+    const {speed} = data.wind;
+    let updatedTemp = Math.floor(temp);
+    let feelMax = Math.floor(feels_like);
+    let { main, icon, id } = data.weather[0];
+    let urlImg;
+
     weather.innerHTML = `
      <div class="container">
             <h3 class="brand">The Weather</h3>
@@ -52,7 +60,7 @@ function getdata(data){
             <h1 class="name" id="name">${data.name}</h1>
             <h4 class="country" id="country">${data.sys.country}</h4>
             <small>
-                <span class="time" id="time">06:09</span>
+                <span class="time" id="time">">${data.timezon}</span>
                 <span class="date" id="date">Sunday july 28</span>
             </small>
         </div>
