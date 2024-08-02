@@ -1,7 +1,7 @@
 // search input area
 let input = document.getElementById("search");
 let btn = document.getElementById("submit");
-
+let API_KEY = "6a2cbb94ad82ec57712155442fb8198c";
 
 
     // container area
@@ -24,18 +24,20 @@ function checkdata() {
     if(input.value.trim() === ""){
         alert("Please enter a city name");
     }else{
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=9a01012f8fa0847a6c1da9bd58353c95`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=${API_KEY}`)
     .then((res) =>{
         return res.json();
     })
     .then((data) =>{
-        getdata(data);
+        // getdata(data);
+        console.log(data)
     })
     .catch((err) =>{
         console.log(err)
     })
    
     } 
+    console.log(input.value)
     
 }
 
