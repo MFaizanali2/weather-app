@@ -4,7 +4,7 @@ let btn = document.getElementById("submit");
 let API_KEY = "6a2cbb94ad82ec57712155442fb8198c";
 let weather = document.querySelector(".weather");
 
-console.log(input.value)
+console.log()
 
 
     // container area
