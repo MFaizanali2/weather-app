@@ -43,7 +43,9 @@ function checkdata() {
     console.log(input.value)
     
 }
-console.log(checkdata());
+
+
+ 
 
 function getdata(data){
 
