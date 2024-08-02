@@ -55,7 +55,7 @@ function getdata(data){
      <div class="container">
             <h3 class="brand">The Weather</h3>
 
-            <h1 class="temp" id="temp">16 <sup>o</sup></h1>
+            <h1 class="temp" id="temp">${updatedTemp} <sup>o</sup></h1>
         <div class="city">
             <h1 class="name" id="name">${data.name}</h1>
             <h4 class="country" id="country">${data.sys.country}</h4>
