@@ -49,8 +49,8 @@ function getdata(data){
 
             <h1 class="temp" id="temp">16 <sup>o</sup></h1>
         <div class="city">
-            <h1 class="name" id="name">Karachi</h1>
-            <h4 class="country" id="country">Pk</h4>
+            <h1 class="name" id="name">${data.name}</h1>
+            <h4 class="country" id="country">${data.sys.country}</h4>
             <small>
                 <span class="time" id="time">06:09</span>
                 <span class="date" id="date">Sunday july 28</span>
