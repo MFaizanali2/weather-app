@@ -2,6 +2,7 @@
 let input = document.getElementById("search");
 let btn = document.getElementById("submit");
 let API_KEY = "6a2cbb94ad82ec57712155442fb8198c";
+let weather = document.querySelector(".weather");
 
 
     // container area
@@ -41,6 +42,23 @@ function checkdata() {
     
 }
 
+function getdata(data){
+
+}
+btn.addEventListener("click", checkdata);
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function getdata(data){
     
 //     let dt13 = new Date(data.sys.sunset * 1000);
@@ -69,4 +87,3 @@ function checkdata() {
     
 //     console.log(data)
 // }
-btn.addEventListener("click", checkdata);
