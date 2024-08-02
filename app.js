@@ -4,6 +4,8 @@ let btn = document.getElementById("submit");
 let API_KEY = "6a2cbb94ad82ec57712155442fb8198c";
 let weather = document.querySelector(".weather");
 
+console.log(input.value)
+
 
     // container area
 let temperature = document.getElementById("temp");
@@ -25,12 +27,13 @@ function checkdata() {
     if(input.value.trim() === ""){
         alert("Please enter a city name");
     }else{
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=${API_KEY}`)
+   let url = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=${API_KEY}`;
+    fetch(url)
     .then((res) =>{
         return res.json();
     })
     .then((data) =>{
-        // getdata(data);
+        getdata(data);
         console.log(data)
     })
     .catch((err) =>{
